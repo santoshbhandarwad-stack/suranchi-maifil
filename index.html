@@ -1,14 +1,97 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="mr">
 <head>
-  <title>सुरांची मैफल</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>सुरांची मैफल</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #12001f, #2b003d, #080018);
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 30px 15px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #ddd;
+  font-size: 16px;
+}
+
+.radio-box {
+  margin: 30px 15px;
+  padding: 25px 15px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 20px;
+}
+
+.song-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+audio {
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  color: #aaa;
+  font-size: 13px;
+}
+</style>
 </head>
 
 <body>
 
+<header>
   <h1>🎵 सुरांची मैफल</h1>
+  <div class="subtitle">जुन्या गाण्यांच्या आठवणी...</div>
+</header>
 
-  <p>जुन्या गाण्यांच्या आठवणी...</p>
+<div class="radio-box">
+
+  <div class="song-title">
+    🎶 आपलं गाणं
+  </div>
+
+  <audio controls>
+    <source src="songs/song1.mp3" type="audio/mpeg">
+    तुमचा ब्राउझर ऑडिओ चालवू शकत नाही.
+  </audio>
+
+  <button onclick="alert('लवकरच आणखी गाणी!')">
+    ❤️ आवडले
+  </button>
+
+</div>
+
+<footer>
+  © 2026 सुरांची मैफल
+</footer>
 
 </body>
 </html>
